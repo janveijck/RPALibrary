@@ -1,0 +1,452 @@
+﻿[
+  {
+    "RuleId": "ST-NMG-001",
+    "RuleName": "Variables Naming Convention",
+    "Parameters": [
+      {
+        "Key": "Regex",
+        "UserValue": null,
+        "DefaultValue": "^(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "Regex:",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-008",
+    "RuleName": "Variable Length Exceeded",
+    "Parameters": [
+      {
+        "Key": "Length",
+        "UserValue": null,
+        "DefaultValue": "30",
+        "LocalizedName": "Length:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-003",
+    "RuleName": "Empty Catch Block",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-020",
+    "RuleName": "Undefined Output Properties",
+    "Parameters": [
+      {
+        "Key": "Excluded",
+        "UserValue": null,
+        "DefaultValue": "UiPath.Core.Activities.ForEach, UiPath.Core.Activities.MessageBox, UiPath.Excel.Activities.Business.ExecuteMacroX, UiPath.UIAutomationNext.Activities.NCheckState, UiPath.Excel.Activities.Business.InsertSheetX",
+        "LocalizedName": "Excluded:",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": [
+      "Activity Check State 'Sign In' output argument Exists not assigned to a variable or argument.",
+      "Activity Check State 'Sign In' output argument Exists not assigned to a variable or argument.",
+      "Activity Check State 'Sign In' output argument Exists not assigned to a variable or argument."
+    ]
+  },
+  {
+    "RuleId": "ST-MRD-002",
+    "RuleName": "Activity Name Defaults",
+    "Parameters": [],
+    "ErrorsDescription": [
+      "Activity Sequence has a default name.",
+      "Activity Folder Exists has a default name.",
+      "Activity If has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity Create Folder has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity File Exists has a default name.",
+      "Activity If has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity Copy File has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity If has a default name.",
+      "Activity Sequence has a default name.",
+      "Activity Sequence has a default name."
+    ]
+  },
+  {
+    "RuleId": "ST-USG-005",
+    "RuleName": "Hardcoded Activity Arguments",
+    "Parameters": [
+      {
+        "Key": "ScanOnly",
+        "UserValue": null,
+        "DefaultValue": "System.Activities.Statements.StateMachine,System.Activities.Statements.State",
+        "LocalizedName": "Scan only:",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-REL-006",
+    "RuleName": "Infinite Loop",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-017",
+    "RuleName": "Incomplete IF",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "XL-DBP-027",
+    "RuleName": "Empty Use Excel File Activity",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "MA-DBP-028",
+    "RuleName": "Empty Use Outlook Account activity",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-004",
+    "RuleName": "Display Name Duplication",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "1",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": [
+      "Sequence display name is defined many times. Current allowed threshold is 1. Code contains 10.",
+      "If display name is defined many times. Current allowed threshold is 1. Code contains 3.",
+      "Do display name is defined many times. Current allowed threshold is 1. Code contains 5.",
+      "Check State 'Sign In' display name is defined many times. Current allowed threshold is 1. Code contains 3."
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-005",
+    "RuleName": "Variable Overrides Variable",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-002",
+    "RuleName": "Arguments Naming Convention",
+    "Parameters": [
+      {
+        "Key": "InRegex",
+        "UserValue": null,
+        "DefaultValue": "^in_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "In Regex:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "OutRegex",
+        "UserValue": null,
+        "DefaultValue": "^out_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "Out Regex:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "InOutRegex",
+        "UserValue": null,
+        "DefaultValue": "^io_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "InOut Regex:",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-011",
+    "RuleName": "Prefix Datatable Arguments",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-006",
+    "RuleName": "Variable Overrides Argument",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-016",
+    "RuleName": "Argument Length Exceeded",
+    "Parameters": [
+      {
+        "Key": "Length",
+        "UserValue": null,
+        "DefaultValue": "30",
+        "LocalizedName": "Length:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-002",
+    "RuleName": "High Arguments Count",
+    "Parameters": [
+      {
+        "Key": "ArgumentsCount",
+        "UserValue": null,
+        "DefaultValue": "20",
+        "LocalizedName": "Arguments Count:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-007",
+    "RuleName": "Multiple Flowchart Layers",
+    "Parameters": [
+      {
+        "Key": "LayersCount",
+        "UserValue": null,
+        "DefaultValue": "2",
+        "LocalizedName": "Layer count:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-023",
+    "RuleName": "Empty Workflow",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-007",
+    "RuleName": "Nested If Clauses",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "3",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-004",
+    "RuleName": "Unreachable Activities",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-008",
+    "RuleName": "Empty Sequence",
+    "Parameters": [],
+    "ErrorsDescription": [
+      "Sequence Sequence is empty.",
+      "Sequence Sequence is empty.",
+      "Sequence Sequence is empty.",
+      "Sequence Sequence is empty.",
+      "Sequence Sequence is empty."
+    ]
+  },
+  {
+    "RuleId": "ST-MRD-005",
+    "RuleName": "Redundant Sequences",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-011",
+    "RuleName": "Write Line Usage",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-009",
+    "RuleName": "Deeply Nested Activities",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "7",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-009",
+    "RuleName": "Unused Variables",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-026",
+    "RuleName": "Activity Restrictions",
+    "Parameters": [
+      {
+        "Key": "ProhibitedActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Prohibited Activities",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "AllowedActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Allowed Activities",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-PRR-004",
+    "RuleName": "Hardcoded Delay Activity",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-009",
+    "RuleName": "SecureString Misusage",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-007",
+    "RuleName": "SecureString Argument Usage",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-008",
+    "RuleName": "SecureString Variable Usage",
+    "Parameters": [
+      {
+        "Key": "VariableDepthUsage",
+        "UserValue": null,
+        "DefaultValue": "1",
+        "LocalizedName": "Variable depth usage:",
+        "ConstraintRegex": "(1|2|3)"
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-024",
+    "RuleName": "Unused saved for later",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-025",
+    "RuleName": "Saved Value Misuse",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-010",
+    "RuleName": "Unused Dependencies",
+    "Parameters": [],
+    "ErrorsDescription": [
+      "Dependency package UiPath.Mail.Activities is not used."
+    ]
+  },
+  {
+    "RuleId": "ST-USG-014",
+    "RuleName": "Package Restrictions",
+    "Parameters": [
+      {
+        "Key": "ProhibitedPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Packages",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-005",
+    "RuleName": "Check Project.json Exists",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-006",
+    "RuleName": "Main Workflow Exists",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-009",
+    "RuleName": "Prefix DataTable Variables",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-025",
+    "RuleName": "Variables Serialization Prerequisite",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-028",
+    "RuleName": "Arguments Serialization Prerequisite",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-024",
+    "RuleName": "Persistence Activities Check",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-026",
+    "RuleName": "Delay Activity Usage",
+    "Parameters": [],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-027",
+    "RuleName": "Required Packages",
+    "Parameters": [
+      {
+        "Key": "RequiredPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Required Package References",
+        "ConstraintRegex": null
+      }
+    ],
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-009",
+    "RuleName": "File Activities Stats",
+    "Parameters": [],
+    "ErrorsDescription": [
+      "Expand to see details"
+    ]
+  },
+  {
+    "RuleId": "ST-ANA-003",
+    "RuleName": "Project Workflow Count",
+    "Parameters": [],
+    "ErrorsDescription": [
+      "Expand to see details"
+    ]
+  }
+]

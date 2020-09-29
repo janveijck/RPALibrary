@@ -1,0 +1,37 @@
+{
+  "name": "V053 Report",
+  "description": "Refinitiv V053 Google + Nexis Searches",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.8.3-beta.851189]",
+    "UiPath.Mail.Activities": "[1.8.3-beta.850998]",
+    "UiPath.System.Activities": "[20.4.0-beta.850545]",
+    "UiPath.UIAutomationX.Activities": "[2.0.0-preview]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "19.12.0.61",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": []
+  },
+  "expressionLanguage": "VisualBasic"
+}
